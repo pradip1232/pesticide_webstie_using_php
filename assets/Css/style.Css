@@ -1,0 +1,988 @@
+@font-face {
+    font-family: 'Felix Titling';
+    src: url('path/to/FelixTitling.woff2') format('woff2'),
+        /* Adjust this path as necessary */
+        url('path/to/FelixTitling.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+/* Custom CSS  Nav Bar*/
+
+.navbar {
+    background-color: transparent !important;
+    position: absolute;
+}
+
+.navbar-brand img {
+    max-height: 120px;
+    /* Adjust the height of the logo as needed */
+    /* border-radius: ;  */
+    background-color: transparent;
+    padding: 0px;
+    /* Add some padding to the logo */
+}
+
+.navbar-nav .nav-item {
+    margin-top: 5px;
+    /* Adjust the vertical alignment of icons */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #000 !important;
+    font-size: 16px;
+    /* Change the text color to dark black */
+}
+
+.bg-img {
+    background-image: url('/assets/Images/home-bg.png');
+    /* Replace with your own image or style */
+    width: 100%;
+    height: 100vh;
+
+    min-height: 100vh;
+
+}
+
+
+.bg-img {
+    position: relative !important;
+    width: 100% !important;
+    height: 100vh !important;
+}
+
+.bg-img img {
+    width: 100% !important;
+    height: 100vh !important;
+}
+
+.textandheadingbtn {
+    position: absolute !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    text-align: right !important;
+    color: white !important;
+}
+
+.textandheadingbtn p {
+    font-size: 36px;
+}
+
+.textandheadingbtn h1 {
+    font-size: 64px;
+}
+
+.shopbtn {
+    background-color: white;
+    color: black;
+    border: 1px;
+    /* Optional: Add a border for better visibility */
+}
+
+.shopbtn:hover {
+    /* background-color: #f8f9fa; */
+    /* Optional: Change background color on hover */
+    color: black;
+}
+
+.content {
+    /* position: absolute;  comment to tits overriding to sidebar content */
+    bottom: 50px;
+    /* Adjust the distance from the bottom */
+    right: 50px;
+    /* Adjust the distance from the right */
+    text-align: right;
+    /* Align content to the right */
+    color: white;
+    /* Set text color to white */
+}
+
+/* ----------------page 2 css------------------ */
+.rounded-square {
+    border-radius: 30px;
+    /* Adjust the border-radius to make the edges rounded */
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 200px;
+    /* Adjust the height as needed */
+}
+
+
+.section2-product-cate {
+    height: 70vh;
+    width: 100%;
+}
+
+.product-category {
+    color: #44d420;
+    /* Light green color */
+    text-align: center;
+    /* Center align the text */
+    font-size: 36px;
+    /* Adjust the font size as needed */
+    /* Make the text bold */
+    margin-bottom: 30px;
+    /* Add space below the heading */
+}
+
+/* Additional styles for h4 headings */
+.col-md-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-md-3 h4 {
+    color: #c99d06;
+    /* Light golden color */
+    font-size: 20px;
+    /* Decrease the font size */
+    text-align: center;
+    /* Center align the text */
+    margin-top: 10px;
+    /* Add space between image and text */
+}
+
+.col-md-3 p {
+    color: #141313;
+    /* Darker text color */
+    /* font-weight: bold; */
+    text-align: center;
+    /* Center align the text */
+}
+
+.cards-para3 {
+    font-size: 16px;
+}
+
+/* ------------------------page3 css--------------------------- */
+/* Add custom styles if needed */
+/* body {
+                overflow-x: hidden; 
+                margin: 0; 
+              } */
+.container-fluid {
+    position: relative;
+
+}
+
+.image-section {
+    position: absolute;
+    /* Fixed position for the image section */
+    /* position:relative; */
+    top: 1vh;
+    /* Position the section at the top of the viewport */
+    left: 0;
+    /* Position the section at the left of the viewport */
+    width: 100%;
+    /* Occupy full width of the viewport */
+    height: 98vh;
+    /* Occupy 98% of the viewport height */
+    background-color: #f0f0f0;
+    overflow: hidden;
+    /* Hide overflow */
+}
+
+
+
+
+
+
+
+
+
+
+
+.sunfield-heading {
+    font-family: 'Felix Titling', serif;
+    /* Fallback to a serif font */
+    font-weight: 400;
+    font-size: 64px;
+    color: #8BCC00;
+    line-height: 74px;
+    margin-bottom: 9px;
+    letter-spacing: 1%;
+}
+
+
+.year-of-sfa {
+    font-family: 'Arial', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0.06em;
+    text-align: left;
+
+}
+
+.upar-para {
+    font-family: 'Arial', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36.72px;
+    letter-spacing: 0.06em;
+    text-align: left;
+
+}
+
+
+
+
+
+
+.image-section img {
+    position: absolute;
+    /* Position images absolutely within container */
+    top: 0;
+    /* Position images at the top of container */
+    left: 0;
+    /* Position images at the left of container */
+    width: 100%;
+    /* Ensure images fill entire width of container */
+    height: 100%;
+    /* Ensure images fill entire height of container */
+    object-fit: cover;
+    /* Cover container with image */
+    transition: opacity 0.5s ease-in-out;
+    /* Smooth transition for opacity */
+}
+
+/* Hide all images except the active one */
+.image-section img:not(.active) {
+    opacity: 0;
+    pointer-events: none;
+    /* Disable pointer events for hidden images */
+}
+
+.text-section {
+    padding-top: 100vh;
+    /* Offset the section to avoid overlapping with image section */
+}
+
+.section {
+    padding: 20px;
+    background-color: #f8f9fa;
+    /* Light gray background color */
+    text-align: center;
+    margin-top: 100vh;
+    /* Ensure section is below image section */
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+    /* width: 0px; */
+    /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+/* body {
+                scrollbar-width: none; 
+                -ms-overflow-style: none; 
+              } */
+
+.image-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.image-content h3 {
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width:200px) {
+    .image-section {
+
+        width: 100%;
+        height: 34vh;
+
+
+    }
+}
+
+@media only screen and (min-width:320px) {
+    .image-section {
+        height: 30vh;
+        width: 100%;
+
+
+    }
+}
+
+@media only screen and (min-width:380px) {
+    .image-section {
+        height: 20vh;
+        width: 100%;
+
+
+    }
+}
+
+
+
+@media only screen and (min-width:760px) {
+    .image-section {
+        height: 40vh;
+        width: 100%;
+
+
+    }
+}
+
+
+@media only screen and (min-width:1230px) {
+    .image-section {
+
+        width: 100%;
+        height: 94vh;
+
+
+    }
+}
+
+/* --------------page 4 css----------------------------- */
+/* --------------page 4 css----------------------------- */
+.container-page4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    /* Change height to auto to accommodate dynamic content */
+    padding-top: 20px;
+    /* Add padding to the top of the container */
+    margin-top: 100vh;
+    /* Ensure it's positioned below page 3 */
+}
+
+/* CSS to style the heading */
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+    /* Add margin to separate heading from sections */
+    color: rgb(221, 201, 25);
+    font-size: 28px;
+    /* Adjust font size as needed */
+    font-weight: 1000;
+
+}
+
+/* CSS to style the row containing left and right sections */
+.row-page4 {
+    display: flex;
+    flex-direction: row;
+    /* Arrange items in a row */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: flex-start;
+    /* Align items to the start of the cross axis */
+}
+
+/* CSS to style the left section */
+.left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    /* Add margin to separate left and right sections */
+}
+
+/* CSS to style the buttons */
+.button {
+    background-size: cover;
+    width: 500px;
+    height: 120px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* CSS to style the hover effect for buttons */
+.button:hover {
+    transform: translateY(-5px);
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+}
+
+/* CSS to style the right section */
+.right-section {
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 450px;
+    background-image: url('image19.png');
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 780px) {
+    .row-page4 {
+        flex-direction: column;
+        /* Change to column layout on smaller screens */
+        margin-right: 0;
+        /* Remove right margin */
+    }
+
+    .left-section {
+        margin-right: 0;
+        /* Remove right margin on left section */
+        margin-bottom: 0;
+        /* Remove bottom margin on left section */
+    }
+
+    .button {
+        width: 100%;
+        /* Make buttons full width on smaller screens */
+    }
+
+    .right-section {
+        width: 100%;
+        /* Make image full width on smaller screens */
+        height: 290px;
+        /* Set height to auto to maintain aspect ratio */
+    }
+
+    .right-section {
+        order: -1;
+        /* Change the order to display the image below buttons */
+        margin-top: 20px;
+        /* Add margin to separate the image from buttons */
+    }
+}
+
+/* Additional media query for even smaller screens */
+@media only screen and (max-width: 590px) {
+    .button {
+        width: 350px;
+        /* Adjust button width for smaller screens */
+        height: 70px;
+        /* Adjust button height for smaller screens */
+        font-size: 18px;
+        /* Decrease font size for smaller screens */
+    }
+
+    .heading {
+        font-size: 25px;
+        /* Decrease heading font size for smaller screens */
+    }
+}
+
+
+
+
+
+
+.sunfieldssectionbg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url("/assets/Images/Nature.png") no-repeat center center;
+    background-size: cover;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    /* Make sure the text is readable */
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    /* Optional: Add a background to improve text readability */
+}
+
+.aboutus-heading {
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41.31px;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+}
+
+.about-us-bg-img{
+    width: 100%!important;
+}
+
+.para-sunfields-agro2 {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #000;
+
+}
+
+.custom-margin-top {
+    margin-top: 8vw;
+}
+
+.btn-rectangle {
+    border-radius: 0;
+    background-color: #D58711;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.navbar-brand {
+    margin-bottom: -4vw;
+}
+
+.text-color {
+    margin-top: 8vw;
+    color: #D58711;
+}
+
+.text-custom-color {
+    font-family: 'Times New Roman', Times, serif;
+    color: #8BCC00
+}
+
+
+
+
+
+
+
+
+
+
+
+.text-color1 {
+    color: greenyellow;
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41.31px;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+
+.core-value-cards {
+    width: 100%;
+    /* Set to 100% to let the column width control the size */
+    height: 215 px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.core-value-cards .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.custom-gap>.col-md-4 {
+    padding: 10px;
+    /* 10px on each side will create a 20px gap between columns */
+}
+
+.why-heading {
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41.31px;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+}
+
+.addMarginTop {
+    margin-top: 15%;
+}
+
+.custom-subhead-1 {
+    transform: translateY(+150px) translateX(+50px);
+}
+
+.custom-subhead-2 {
+    transform: translateY(-280px);
+}
+
+.custom-subhead-3 {
+    transform: translateY(-250px);
+}
+
+.addMarginTop {
+    margin-top: 15%;
+}
+
+
+@media (max-width: 768px) {
+
+    .custom-subhead-1,
+    .custom-subhead-2,
+    .custom-subhead-3 {
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px max-width: 992px) {
+
+    .custom-subhead-1 {
+        transform: translateY(+50px) translateX(+25px);
+    }
+
+    .custom-subhead-2 {
+        transform: translateY(-140px);
+    }
+
+    .custom-subhead-3 {
+        transform: translateY(-120px);
+    }
+}
+
+@media (min-width: 992px) {
+
+    .custom-subhead-1 {
+        transform: translateY(+150px) translateX(+50px);
+    }
+
+    .custom-subhead-2 {
+        transform: translateY(-280px);
+    }
+
+    .custom-subhead-3 {
+        transform: translateY(-250px);
+    }
+}
+
+
+
+.testimonial-sec {
+    margin-top: -14%;
+}
+
+.testimonial-heading {
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41.31px;
+    letter-spacing: 0.06em;
+    /* text-align: left; */
+    color: #8BCC00;
+}
+
+
+
+
+
+
+
+.custom-text {
+    /* font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: greenyellow; */
+}
+
+.custom-textt {
+    font-family: Cormorant Upright;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48.44px;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+    color: orange
+}
+
+
+.feature {
+    width: 346px;
+    height: 246px;
+    top: 1744px;
+    left: -3009px;
+    gap: 0px;
+    border-radius: 10px 0px 0px 0px;
+    border: 0.5px 0px 0px 0px;
+    border-color: grey;
+    opacity: 0px;
+    background: #ccc;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.feature:hover {
+    background-color: #8BCC00;
+    color: white;
+}
+
+.feature:hover h3,
+p {
+    color: white;
+}
+
+.feature:hover p {
+    color: white;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 4px double #ccc;
+    /* Make the border circular */
+}
+
+.feature h3 {
+    margin-top: 0;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #999;
+}
+
+.name-and-img {
+    margin-top: 36px;
+    padding-bottom: 32px;
+}
+
+.name-and-img p {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.4px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #8BCC00;
+}
+
+.name-and-img h3 {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.7px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #D58711;
+    ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.location-heading {
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41.31px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #D58711;
+}
+
+
+#headOffice {
+    font-family: Arial;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36.8px;
+    letter-spacing: 0.06em;
+    /* text-align: left; */
+    color: #8BCC00;
+}
+
+.ofc-oara {
+    font-family: Arial;
+    font-size: 20px !important;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000;
+    letter-spacing: 0.13em;
+    /* text-align: left; */
+
+}
+
+
+.section-location {
+    height: 109vh;
+}
+
+
+
+.custom-background {
+    background-color: lightgrey;
+}
+
+.custom-backgroundd {
+    background-color: lightgrey;
+}
+
+.text-color2 {
+    color: orange;
+}
+
+.custom-color {
+    color: greenyellow;
+}
+
+
+
+
+.footer-heading {
+    font-family: Cormorant Upright;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 38.75px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #D58711;
+}
+
+.footer-para2 p {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.4px;
+    letter-spacing: 0.06em;
+    /* text-align: left; */
+    color: #000;
+}
+
+
+
+.queries-heading {
+    font-family: Arial;
+    /* font-size: 20px; */
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: left;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.addMarginTop {
+    margin-top: 15%;
+}
+
+.custom-subhead-1 {
+    transform: translateY(+150px) translateX(+50px);
+}
+
+.custom-subhead-2 {
+    transform: translateY(-280px);
+}
+
+.custom-subhead-3 {
+    transform: translateY(-250px);
+}
+
+.addMarginTop {
+    margin-top: 15%;
+}
+
+
+@media (max-width: 768px) {
+
+    .custom-subhead-1,
+    .custom-subhead-2,
+    .custom-subhead-3 {
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px max-width: 992px) {
+
+    .custom-subhead-1 {
+        transform: translateY(+50px) translateX(+25px);
+    }
+
+    .custom-subhead-2 {
+        transform: translateY(-140px);
+    }
+
+    .custom-subhead-3 {
+        transform: translateY(-120px);
+    }
+}
+
+@media (min-width: 992px) {
+
+    .custom-subhead-1 {
+        transform: translateY(+150px) translateX(+50px);
+    }
+
+    .custom-subhead-2 {
+        transform: translateY(-280px);
+    }
+
+    .custom-subhead-3 {
+        transform: translateY(-250px);
+    }
+}

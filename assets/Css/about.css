@@ -1,0 +1,322 @@
+.bgk-img {
+    height: 80vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.fullscreen-image {
+    height: 77vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.custom-container {
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+
+.about-sun-para h3 {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: black;
+}
+
+.we-have-para2 {
+    font-family: Arial;
+    font-size: 16px !important;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: black;
+}
+
+.bg-img {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+}
+
+/* .navbar {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1000; */
+/* } */
+
+/* .navbar-brand img {
+    height: 70px;
+} */
+
+.heading h1 {
+    font-family: Felix Titling;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56.13px;
+    letter-spacing: 0.06em;
+    /* text-align: left; */
+    color: black;
+
+}
+
+.heading {
+    text-align: center;
+    color: black;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    /* background-color: gainsboro; */
+    /* color: green; */
+}
+
+.nav-link {
+    /* color: blue; */
+}
+
+.btn-rectangle {
+    border-radius: 0;
+}
+
+.navbar-brand img {
+    /* margin-top: 1vw; */
+    margin-left: 0.5vw;
+}
+
+.font-size {
+    font-size: larger;
+}
+
+.custom-font {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-heading3 {
+    /* background-image: linear-gradient(to right, white 0%, white 100%); */
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+
+}
+
+
+
+.who-we-are {
+    font-family: Felix Titling;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42.1px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #D58711;
+}
+
+.custom-icon {
+    color: green;
+}
+
+.navbar-toggler {
+    text-align: center;
+    padding: 0;
+}
+
+.toggler {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar-brand img {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .nav-link,
+    .navbar-brand span {
+        font-size: 0.8em;
+    }
+
+    .btn-rectangle {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+
+
+    .text-container {
+        position: relative;
+        margin-top: 10px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vision-heading {
+    font-family: Felix Titling;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42.1px;
+    letter-spacing: 0.06em;
+    /* text-align: left; */
+    color: #D58711;
+
+}
+
+
+.to-promote-heading {
+    font-family: Arial;
+    font-size: 24px !important;
+    font-weight: 700;
+    line-height: 27.6px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #8BCC00;
+}
+
+.we-well-know-heading h5 {
+    font-family: Arial;
+    font-size: 16px !important;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+}
+
+.our-core-value-heading3 {
+    font-family: Felix Titling;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42.1px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: black;
+}
+
+.corevaluescards6 {
+    width: 192px;
+    height: 185px;
+    border-radius: 11px 11px 11px 11px !important;
+    opacity: 1;
+}
+
+.history-heading {
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 41.4px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #8BCC00;
+}
+
+
+
+.history-content h5 {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+}
+
+.meet-main-cont {
+    height: 90vh !important;
+}
+
+.meet-container {
+    height: 70vh;
+    margin-top: 82px;
+    background-color: #F4F4F4;
+}
+
+.meet-team {
+    font-family: Arial;
+    font-size: 36px !important;
+    font-weight: 700;
+    line-height: 41.4px;
+    letter-spacing: 0.06em;
+    text-align: left;
+
+    color: #D58711;
+}
+
+.meet-container h5 {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    /* text-align: left; */
+    color: black;
+}
+
+.read-morebtn {
+    width: 138.42px;
+    height: 33.83px;
+    /* top: 377.43px;
+left: 591.49px; */
+    gap: 0px;
+    opacity: 0px;
+    background-color: #8BCC00;
+    color: #FFFFFF;
+}
+
+.meet-hr {
+    width: 348.14px;
+    padding-left: 30px;
+    margin-left: 22px;
+    border: 1px solid #000000
+}
+
+
+.founder {
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #D58711;
+}
+
+.founder-heading {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #8BCC00;
+}
